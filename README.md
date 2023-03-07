@@ -207,7 +207,7 @@ cd fleet-infra`
 ```
 flux create source git [guestbook-gitops] \
   --url=https://github.com/[github-user-id/guestbook-gitops] \
-  --branch=master \
+  --branch=main \
   --interval=30s \
   --export > ./[cluster-name]/[guestbook-gitops]-source.yaml
 ```
@@ -237,7 +237,7 @@ You should now see the latest revisions for the flux toolkit components as well 
 ```
 NAME            REVISION                                        SUSPENDED       READY   MESSAGE
 flux-system     main/e1c2a084e398b9d36ce7f5067c44178b5cf9a126   False           True    Applied revision: main/e1c2a084e398b9d36ce7f5067c44178b5cf9a126
-guestbook       master/35147c43026fec5a49ae31371ae8c046e4d5860e False           True    Applied revision: master/35147c43026fec5a49ae31371ae8c046e4d5860e
+guestbook       main/35147c43026fec5a49ae31371ae8c046e4d5860e False           True    Applied revision: main/35147c43026fec5a49ae31371ae8c046e4d5860e
 ```
 
 Check that all of the services of the guestbook are deploying and running in the cluster with:
