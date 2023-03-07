@@ -102,7 +102,7 @@ The secret access key is found on your AWS account ID and is obtainable from the
 View the workflow in your repo under .github/workflows/main.yml. Ensure you have the environment variables on lines 16-20 of main.yml set up properly.
 
 ```
-16 AWS_DEFAULT_REGION: eu-west-1
+16 AWS_DEFAULT_REGION: us-east-1
 17 AWS_DEFAULT_OUTPUT: json
 18 AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
 19 AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
