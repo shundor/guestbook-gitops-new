@@ -50,7 +50,9 @@ jobs:
         REPOSITORY: guestbook
         IMAGE_TAG: ${{ github.sha }}
       run: |
-        docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG ./php-redis
+        docker build \
+          -t $REPOSITORY:$IMAGE_TAG \
+          -t $REGISTRY/$REPOSITORY:$IMAGE_TAG ./php-redis
         docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
  
     # Set image tag in kustomization
