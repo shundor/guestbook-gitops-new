@@ -2,10 +2,12 @@
 on:
   pull_request:
     paths:
+    - "**/*.yaml"
     - "**/*.yml"
     - "**/*.html"
   push:
     paths:
+    - "**/*.yaml"
     - "**/*.yml"
     - "**/*.html"
     branches:         # array of glob patterns matching against refs/heads. Optional; defaults to all
