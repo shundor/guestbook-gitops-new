@@ -58,6 +58,10 @@ jobs:
     # Set image tag in kustomization
 
     - name: Set image tag
+      env:
+        REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        REPOSITORY: guestbook
+        IMAGE_TAG: ${{ github.sha }}    
       run: |
           cd deploy
           kustomize edit set image $REGISTRY/$REPOSITORY:$IMAGE_TAG
