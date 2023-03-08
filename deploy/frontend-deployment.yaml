@@ -3,6 +3,7 @@ apiVersion: extensions/v1beta1 #  for k8s versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
   name: frontend
+  namespace: default
   annotations:
     
 spec:
