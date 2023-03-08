@@ -10,7 +10,7 @@ resources:
 
 images:
 - name: 987508290655.dkr.ecr.us-east-1.amazonaws.com/guestbook
-  newTag: 990f2eb15053bd3eac9d92a81ad40fb5362edc08
+  newTag: 2356405a40cb464168f0cbad117038cb05fe5449
 - name: frontend
   newName: guestbook
   newTag: 3fa38b9d2acb82a6e567c5935d1037a1339e4f1d
