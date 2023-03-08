@@ -223,7 +223,6 @@ flux create kustomization guestbook-gitops \
  --source=guestbook-gitops \
  --path="./deploy" \
  --prune=true \
- --validation=client \
  --interval=1h \
  --export > ./[cluster-name]/guestbook-gitops-sync.yaml
 ```
