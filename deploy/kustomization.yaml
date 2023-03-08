@@ -9,8 +9,6 @@ resources:
 - redis-slave-service.yaml
 
 images:
-- name: 457472006214.dkr.ecr.us-east-1.amazonaws.com/guestbook
-  newTag: d6cbdc0df33ef5f5dce803931e4d89031865223b
 - name: 987508290655.dkr.ecr.us-east-1.amazonaws.com/guestbook
   newTag: cd9b80028bdf3a7e66633614c17e81853ee95cb0
 - name: frontend
